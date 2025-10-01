@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+}
+.nav a{
+    flex: 1;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+.nav a.active {
+    background-color: rgb(21, 255, 0);
+    color: aliceblue;
+}
+.nav a.ative:hover {
+    scale: 1.1;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 149);
+    color: black;
+}
+.nav a:hover {
+    scale: 1.1;
+    border: 0px; 
+    border-radius: 10px;
+    background-color: rgb(0, 255, 149);
+    color: black;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: rgb(48, 47, 47);
+    grid-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.image img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    border: 0px solid rgb(48, 47, 47);
+    border-radius: 10px;
+}   
+.tenanh {
+    text-align: center;
+    background-color: rgb(38, 194, 255);
+    border: 10px solid rgb(38, 194, 255);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.image img:hover {
+    scale: 1.1;
+    background-color: rgb(48, 47, 47);
+}
