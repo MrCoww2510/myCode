@@ -49,5 +49,6 @@ public class vigenere {
         System.out.println("Cipher Text: " + cipherText);
         String decryptedText = obj.decrypt(cipherText, a);
         System.out.println("Decrypted Text: " + decryptedText);
+        sc.close();
     }
 }

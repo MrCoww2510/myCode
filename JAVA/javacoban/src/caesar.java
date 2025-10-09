@@ -43,8 +43,8 @@ public class caesar {
         String str1=new caesar().maHoa(str, n);
         System.out.println("Chuoi sau khi ma hoa: "+str1);
         new caesar().vecCan(str1);
-        // String str2=new caser().giaiMa(str1, n);
-        // System.out.println("Chuoi sau khi giai ma: "+str2);
+        String str2=new caesar().giaiMa(str1, n);
+        System.out.println("Chuoi sau khi giai ma: "+str2);
         scanner.close();
     }
    
