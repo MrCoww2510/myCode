@@ -28,7 +28,7 @@ hotendem = ['Cao Hoàng', 'Dương Hoàng', 'Trần Công', 'Nguyễn Minh Thái
 ten = ['An', 'Ân', 'Anh', 'Bảo', 'Bình', 'Cẩm', 'Cân']
 gioitinh = ['Nam', 'Nam', 'Nam', 'Nam', 'Nam', 'Nam', 'Nam']
 ngaysinh = ['23/10/2007', '12/01/2007', '19/06/2007', '30/12/2007', '01/01/2007', '05/08/2007', '26/01/2007']
-mmt = array.array('f',[8, 9, 6.5, 6, 7.75, 10, 9.25])
+mmt = array.array('f',[8, 9, 6.5, 6, 7.75, 9, 9])
 ctdl = array.array('f',[7, 6.5, 9, 8.75, 5.75, 8, 7])
 
 #b
@@ -44,11 +44,12 @@ print("Tổng điểm thi môn CTDL của toàn bộ sinh viên trong bảng là
 #d
 max_mmt = max(mmt)
 min_mmt = min(mmt)
-index_max_mmt = mmt.index(max_mmt)
-index_min_mmt = mmt.index(min_mmt)
-print("Sinh viên có điểm môn MMT lớn nhất là: ", mssv[index_max_mmt], hotendem[index_max_mmt], ten[index_max_mmt], "với điểm MMT là: ", max_mmt)
-print("Sinh viên có điểm môn MMT nhỏ nhất là: ", mssv[index_min_mmt], hotendem[index_min_mmt], ten[index_min_mmt], "với điểm MMT là: ", min_mmt)
-
+for i in range(len(mmt)) :
+    if mmt[i] == max_mmt :
+        print("Sinh viên có điểm môn MMT lớn nhất là: ", mssv[i], hotendem[i], ten[i], "với điểm MMT là: ", max_mmt)
+for i in range(len(mmt)) :
+    if mmt[i] == min_mmt:
+        print("Sinh viên có điểm môn MMT nhỏ nhất là: ", mssv[i], hotendem[i], ten[i], "với điểm MMT là: ", min_mmt)
 #e
 count_ctdl_ge_7 = 0
 count_ctdl_lt_7 = 0
