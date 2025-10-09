@@ -35,9 +35,15 @@ history_date = ["Aug 16, 2024, 10:30:05 AM",
 history_status = ['Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done']
 
 #b
+print()
+print('Câu B')
+print()
 for i in range(len(history_user)):
     print(history_user[i]+" "+ history_ip[i]+" "+history_action[i]+" "+history_date[i]+" "+history_status[i])
 #c
+print()
+print('Câu C')
+print()
 count_fastuser = history_user.count('fastuser')
 count_fastad = history_user.count('fastad')
 count_ftpiubit = history_user.count('ftpiubit')
@@ -50,9 +56,23 @@ elif max == count_fastad:
 else:
     print("ftpiubit với", count_ftpiubit, "lần")
 #d
-#continiu
+print()
+print('Câu D')
+print()
+ftpiubit_ip_count= history_ip.count('123.25.21.25')
+fastuser_ip_count= history_ip.count('123.25.21.12')
+fastad_ip_count= history_ip.count('123.25.21.122')
+if ftpiubit_ip_count <= fastuser_ip_count and ftpiubit_ip_count <= fastad_ip_count:
+    print("IP xuất hiện duy nhất là: 123.25.21.25 với", ftpiubit_ip_count, "lần của người dùng ftpiubit")
+elif fastuser_ip_count <= ftpiubit_ip_count and fastuser_ip_count <= fastad_ip_count:
+    print("IP xuất hiện duy nhất là:123.25.21.12 với", fastuser_ip_count, "lần của người dùng fastuser")
+else:
+    print("IP xuất hiện duy nhất là: 123.25.21.122 với", fastad_ip_count, "lần của người dùng fastad")
+
 #e
+print()
+print('Câu E')
+print()
 for i in range(len(history_action)):
     if 'deleted' in history_action[i]:
         print("thông tin người dùng có hành động deleted là: ",history_user[i]+" "+ history_ip[i]+" "+history_action[i]+" "+history_date[i]+" "+history_status[i])
-        
