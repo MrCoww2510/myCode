@@ -1,0 +1,78 @@
+🧩 Giai đoạn 1: Làm chủ tư duy cơ bản (Ngày 1–7)
+
+Mục tiêu: luyện khả năng suy luận và chia nhỏ vấn đề.
+
+Ngày 1: Viết chương trình tính tổng 1 → n mà không dùng for hay while. (gợi ý: đệ quy)
+
+Ngày 2: Viết hàm đảo ngược chuỗi thủ công (không dùng [::-1] hay hàm có sẵn).
+
+Ngày 3: Viết hàm tìm số lớn nhất trong danh sách bằng tay, không max().
+
+Ngày 4: Tính số Fibonacci thứ n (cả 2 cách: đệ quy và vòng lặp).
+
+Ngày 5: Tự code hàm count() để đếm số lần xuất hiện của phần tử trong mảng.
+
+Ngày 6: Nhập danh sách số, in ra danh sách không trùng (tự lọc, không set()).
+
+Ngày 7: Viết lại tất cả bài trên nhưng bằng Java hoặc C++.
+👉 Mục tiêu: hiểu “một ngôn ngữ là gì” và “cách tư duy ngôn ngữ khác nhau ra sao.”
+
+⚙️ Giai đoạn 2: Tư duy thuật toán (Ngày 8–15)
+
+Mục tiêu: hiểu cách giải quyết vấn đề tối ưu.
+
+Ngày 8: Sắp xếp danh sách theo thuật toán Bubble Sort.
+
+Ngày 9: Làm lại với Selection Sort.
+
+Ngày 10: Viết tìm kiếm nhị phân (Binary Search).
+
+Ngày 11: Viết hàm kiểm tra số nguyên tố.
+
+Ngày 12: Viết hàm đảo ngược mảng tại chỗ (không mảng phụ).
+
+Ngày 13: Tính giai thừa bằng vòng lặp, sau đó bằng đệ quy.
+
+Ngày 14: Viết chương trình kiểm tra chuỗi Palindrome (chuỗi đối xứng).
+
+Ngày 15: Tự so sánh các thuật toán mày vừa viết (tốc độ, độ phức tạp, ưu/nhược).
+
+🧠 Giai đoạn 3: Cấu trúc dữ liệu & logic (Ngày 16–23)
+
+Mục tiêu: nắm nguyên lý và cách “tổ chức dữ liệu” trong đầu.
+
+Ngày 16: Viết class Linked List thủ công (thêm, xóa, duyệt).
+
+Ngày 17: Viết class Stack (push, pop, peek, isEmpty).
+
+Ngày 18: Viết class Queue (enqueue, dequeue).
+
+Ngày 19: Viết chương trình đảo ngược chuỗi bằng Stack.
+
+Ngày 20: Duyệt cây nhị phân (Binary Tree) bằng đệ quy (pre/in/post-order).
+
+Ngày 21: Tính chiều cao của cây.
+
+Ngày 22: Viết đồ thị bằng danh sách kề (adjacency list).
+
+Ngày 23: Duyệt đồ thị bằng DFS và BFS.
+
+🚀 Giai đoạn 4: Ứng dụng tư duy vào thực tế (Ngày 24–30)
+
+Mục tiêu: học cách biến tư duy thành sản phẩm.
+
+Ngày 24: Làm app quản lý sinh viên (thêm/xóa/tìm/sắp xếp).
+
+Ngày 25: Làm app ghi chú console (thêm, sửa, xóa, lưu file).
+
+Ngày 26: Làm mini game đoán số.
+
+Ngày 27: Viết chương trình đọc file .txt, đếm số từ, in ra từ xuất hiện nhiều nhất.
+
+Ngày 28: Viết lại 1 bài trong giai đoạn 2 bằng 2 ngôn ngữ khác nhau.
+
+Ngày 29: Tự viết 1 bài toán nhỏ, tự đặt input – output, tự giải.
+
+Ngày 30: Review toàn bộ 29 ngày, note lại những đoạn code khiến mày phải “nghĩ lâu”. Đó chính là chỗ tư duy mày đang phát triển.
+
+Nếu mày làm được trọn 30 ngày này, tao dám chắc đầu mày sẽ tự hình thành “khung logic” mà dân lập trình chuyên nghiệp có — kiểu gặp bài mới là não tự chia hướng giải, không hoảng.
