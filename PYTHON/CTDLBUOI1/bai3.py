@@ -12,6 +12,7 @@ fastad      123.25.21.122  Certificate '1kuma.tech_2024-07-31-13-58_25' has been
 #a
 history_user = ['ftpiubit', 'fastuser', 'fastad', 'fastad', 'fastuser', 'fastuser', 'fastuser', 'fastuser', 'fastuser', 'fastad']
 history_ip = ['123.25.21.25','123.25.21.12' ,'123.25.21.122','123.25.21.122','123.25.21.12' ,'123.25.21.12' ,'123.25.21.12' ,'123.25.21.12','123.25.21.12' ,'123.25.21.122']
+
 history_action = ["Information about the '1kuma.tech' site has been updated",     
                   "Information about the '1kuma.tech' site has been updated ",     
                   "Backup copy '1kuma.tech.tar.gz' has been deleted",
@@ -22,6 +23,7 @@ history_action = ["Information about the '1kuma.tech' site has been updated",
                   "FTP account 'ftpinet' has been deleted",
                   "FTP account 'ftpinet' has been created",
                   "Certificate '1kuma.tech_2024-07-31-13-58_25' has been created"]
+
 history_date = ["Aug 16, 2024, 10:30:05 AM",
                 "Aug 15, 2024, 4:04:51 PM",
                 "Aug 5, 2024, 8:47:39 AM",
@@ -32,6 +34,7 @@ history_date = ["Aug 16, 2024, 10:30:05 AM",
                 "Aug 2, 2024, 1:55:32 PM",
                 "Aug 2, 2024, 1:53:43 PM",
                 "Jul 31, 2024, 1:58:25 PM"]
+
 history_status = ['Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done']
 
 #b
