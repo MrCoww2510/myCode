@@ -30,7 +30,7 @@ public class array {
         System.out.println("Mảng sau khi thay 91 bằng 8: " + Arrays.toString(arr));
 
 
-
+        sc.close();
     }
 
     // Hàm đếm số lần xuất hiện của một số trong mảng
