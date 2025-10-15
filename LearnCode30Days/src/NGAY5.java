@@ -16,7 +16,6 @@ public class NGAY5 {
             dem = 0;
         }
     }
-
     public static void main(String[] args) {
         //tự nhập dữ liệu
         int[] save = new int[20];
