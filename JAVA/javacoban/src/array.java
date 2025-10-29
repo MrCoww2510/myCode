@@ -16,7 +16,7 @@ public class array {
         // Khai báo và khởi tạo mảng câu A
         Scanner sc = new Scanner(System.in);
         int[] arr = {90, 88, 54, 14, 91, 97, 12, 34, 91, 98, 71, 35, 18, 12, 71, 21, 14, 12, 61, 93};
-        int[] arr2 = new int[arr.length];
+       // int[] arr2 = new int[arr.length];
 
         // Câu B: In ra
         for (int i = 0; i < arr.length; i++) {
