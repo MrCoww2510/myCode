@@ -152,10 +152,3 @@ class DanhSachLienKetDoi:
             print(  "["+str(temp.du_lieu)+"]-->", end="")
             temp = temp.nut_sau
         print('None')
-        
-'''==============================={chạy thử}==================================='''
-ds = DanhSachLienKetDoi()
-ds.them_dulieu_vao_ben_phai_vi_tri(0,25)
-ds.them_dulieu_vao_ben_phai_vi_tri(25,2005)
-ds.them_dulieu_vao_ben_trai_vi_tri(2005,10)
-ds.in_danh_sach_tu_dau()
