@@ -1,0 +1,317 @@
+1. CẤU TRÚC TÀI LIỆU
+Đây là thẻ <html>
+<html lang | dir | > (toàn bộ trang web) </html>
+
+
+Và thẻ này có tác dụng là:
+Bao toàn bộ tài liệu HTML, khai báo ngôn ngữ và hướng chữ.
+
+Đây là thẻ <head>
+<head> (metadata) </head>
+
+
+Và thẻ này có tác dụng là:
+Chứa thông tin cấu hình trang, không hiển thị ra màn hình.
+
+Đây là thẻ <title>
+<title> (tiêu đề trang) </title>
+
+
+Và thẻ này có tác dụng là:
+Đặt tiêu đề hiển thị trên tab trình duyệt và kết quả tìm kiếm.
+
+Đây là thẻ <body>
+<body> (nội dung hiển thị) </body>
+
+
+Và thẻ này có tác dụng là:
+Chứa toàn bộ nội dung người dùng nhìn thấy.
+
+2. METADATA
+Đây là thẻ <meta>
+<meta charset | name | content | http-equiv | >
+
+
+Và thẻ này có tác dụng là:
+Khai báo charset, SEO, responsive, thông tin trình duyệt.
+
+Đây là thẻ <link>
+<link rel | href | type | media | >
+
+
+Và thẻ này có tác dụng là:
+Liên kết tài nguyên ngoài như CSS, icon.
+
+Đây là thẻ <style>
+<style type | media | > (CSS) </style>
+
+
+Và thẻ này có tác dụng là:
+Viết CSS trực tiếp trong HTML.
+
+Đây là thẻ <script>
+<script src | type | async | defer | > (JS) </script>
+
+
+Và thẻ này có tác dụng là:
+Nhúng hoặc liên kết JavaScript.
+
+Đây là thẻ <base>
+<base href | target | >
+
+
+Và thẻ này có tác dụng là:
+Đặt URL gốc cho toàn bộ link trong trang.
+
+3. SEMANTIC / BỐ CỤC
+<header>
+<header id | class | > (đầu trang / khối) </header>
+
+
+Chứa tiêu đề, logo, thanh điều hướng.
+
+<nav>
+<nav> (menu) </nav>
+
+
+Chứa các liên kết điều hướng.
+
+<main>
+<main> (nội dung chính) </main>
+
+
+Nội dung trung tâm của trang, chỉ có 1 cái.
+
+<section>
+<section> (khu nội dung) </section>
+
+
+Chia nội dung theo chủ đề.
+
+<article>
+<article> (bài viết độc lập) </article>
+
+
+Một nội dung có thể đứng riêng lẻ.
+
+<aside>
+<aside> (nội dung phụ) </aside>
+
+
+Sidebar, quảng cáo, ghi chú.
+
+<footer>
+<footer> (chân trang) </footer>
+
+
+Thông tin cuối trang hoặc cuối khối.
+
+4. VĂN BẢN
+<h1> … <h6>
+<h1> (tiêu đề) </h1>
+
+
+Tiêu đề từ quan trọng nhất đến ít nhất.
+
+<p>
+<p> (đoạn văn) </p>
+
+
+Đoạn văn bản.
+
+<br>
+<br>
+
+
+Xuống dòng.
+
+<hr>
+<hr>
+
+
+Đường phân cách nội dung.
+
+<pre>
+<pre> (giữ nguyên định dạng) </pre>
+
+
+Hiển thị văn bản đúng spacing.
+
+<blockquote>
+<blockquote cite | > (trích dẫn dài) </blockquote>
+
+
+Trích dẫn nguồn ngoài.
+
+<address>
+<address> (thông tin liên hệ) </address>
+
+
+Thông tin tác giả/liên hệ.
+
+5. INLINE TEXT
+<span>
+<span> (inline text) </span>
+
+
+Bọc chữ để style.
+
+<a>
+<a href | target | rel | download | > (liên kết) </a>
+
+
+Tạo link.
+
+<strong>
+<strong> (nhấn mạnh mạnh) </strong>
+
+
+Nhấn mạnh về mặt ý nghĩa.
+
+<b>
+<b> (in đậm) </b>
+
+
+Chỉ in đậm, không semantic.
+
+<em>
+<em> (nhấn mạnh) </em>
+
+
+Nhấn giọng.
+
+<i>
+<i> (in nghiêng) </i>
+
+
+Trang trí chữ.
+
+<u>
+<u> (gạch dưới) </u>
+
+<mark>
+<mark> (đánh dấu) </mark>
+
+<small>
+<small> (chữ nhỏ) </small>
+
+<sub>, <sup>
+<sub> (chỉ số dưới) </sub>
+<sup> (chỉ số trên) </sup>
+
+<code>
+<code> (mã nguồn) </code>
+
+6. DANH SÁCH
+<ul>, <ol>, <li>
+<ul> <li> (mục) </li> </ul>
+
+
+Danh sách không thứ tự / có thứ tự.
+
+<dl>, <dt>, <dd>
+<dl>
+ <dt> (thuật ngữ) </dt>
+ <dd> (mô tả) </dd>
+</dl>
+
+
+Danh sách định nghĩa.
+
+7. BẢNG
+<table>
+<table> (bảng) </table>
+
+
+Tạo bảng.
+
+<tr>, <th>, <td>
+<tr> <td> (ô) </td> </tr>
+
+
+Hàng, ô tiêu đề, ô dữ liệu.
+
+<thead>, <tbody>, <tfoot>
+
+Chia cấu trúc bảng.
+
+8. FORM
+<form>
+<form action | method | enctype | > </form>
+
+
+Bao form nhập liệu.
+
+<input>
+<input type | name | value | placeholder | >
+
+
+Ô nhập dữ liệu.
+
+<textarea>
+<textarea rows | cols | > (văn bản) </textarea>
+
+<select>, <option>
+<select> <option> (giá trị) </option> </select>
+
+<button>
+<button type | > (nút) </button>
+
+<label>
+<label for | > (nhãn) </label>
+
+9. MEDIA
+<img>
+<img src | alt | width | height | >
+
+
+Hiển thị hình ảnh.
+
+<audio>
+<audio controls | autoplay | > </audio>
+
+
+Âm thanh.
+
+<video>
+<video controls | poster | > </video>
+
+
+Video.
+
+<source>
+<source src | type | >
+
+
+Nguồn media.
+
+10. NHÚNG
+<iframe>
+<iframe src | width | height | > </iframe>
+
+
+Nhúng trang khác.
+
+<embed>
+<embed src | type | >
+
+
+Nhúng file.
+
+<object>
+<object data | type | > </object>
+
+11. KHÁC
+<details> / <summary>
+<details>
+ <summary> (tiêu đề) </summary>
+</details>
+
+
+Nội dung đóng mở.
+
+<dialog>
+<dialog open | > (hộp thoại) </dialog>
+
+<template>
+<template> (HTML ẩn) </template>
