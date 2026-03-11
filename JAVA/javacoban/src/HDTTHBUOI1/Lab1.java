@@ -32,22 +32,17 @@ public class Lab1 {
             }
             
         } while (chose != 4);
-
-
-
-
-
         sc.close();
     }
 
     static void GiaiPTBac1(){
         float x;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc1 = new Scanner(System.in);
         System.out.println("nhap a:");
       
-        float a = sc.nextInt();
+        float a = sc1.nextInt();
         System.out.println("nhap b:");
-        float b = sc.nextInt();
+        float b = sc1.nextInt();
         x = (-b)/a;
         System.out.println("x = "+ x );
     }

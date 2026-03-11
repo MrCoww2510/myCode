@@ -1,0 +1,61 @@
+body{
+font-family:Arial;
+background:#eee;
+padding:40px;
+}
+
+.comment-box{
+background:white;
+border:1px solid #ccc;
+padding:20px;
+width:700px;
+}
+
+.comment{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.comment img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+
+.comment span{
+color:gray;
+font-size:12px;
+margin-left:5px;
+}
+
+.reply{
+display:flex;
+gap:10px;
+background:#f5f5f5;
+padding:10px;
+margin-top:10px;
+border:1px solid #ddd;
+}
+
+.reply img{
+width:30px;
+height:30px;
+border-radius:50%;
+}
+
+.page{
+margin-top:15px;
+}
+
+.page span{
+border:1px solid #ccc;
+padding:5px 10px;
+margin-right:5px;
+cursor:pointer;
+}
+
+.active{
+background:#1976d2;
+color:white;
+}

@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    color:white;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    background-color:green;
+    border:3px solid black;
+    list-style:none;
+}
+
+.menuitem{
+    position:relative;
+    padding:10px 15px;
+}
+
+.menuitem:hover{
+    background-color:red;
+}
+
+.menuitem:hover .menucon{
+    display:block;
+}
+
+.menucon{
+    position:absolute;
+    display:none;
+    top:100%;
+    left:0;
+    background-color:rgb(68,68,68);
+}
+
+
+.menucon table{
+    border-collapse:collapse;
+}
+
+.menucon td,.menucon th{
+    padding:8px 15px;
+    border:1px solid black;
+}
+
+
+.header th{
+    color:red;
+}
+
+
+.row td{
+    padding:10px;
+    background-color:blue;
+    width:200px;
+}
+td:hover{
+    background-color: aquamarine;
+}

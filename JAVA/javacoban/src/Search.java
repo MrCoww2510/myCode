@@ -7,14 +7,16 @@ public class Search {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-        System.out.println("search");
-        System.out.println(BinarySearch(arr,31));
-        System.out.println("search");
-        System.out.println(ternarySearch(arr,31));
-        System.out.println("search");
-        System.out.println(jumpSearch(arr,31));
-        System.out.println("search");
+        System.out.println("Linear search");
         System.out.println(LinearSearch(arr,31));
+        System.out.println("Binary search");
+        System.out.println(BinarySearch(arr,31));
+        System.out.println("Ternary search");
+        System.out.println(ternarySearch(arr,31));
+        System.out.println("Jump search");
+        System.out.println(jumpSearch(arr,31));
+        System.out.println(" interpolation Search ");
+        System.out.println(interpolationSearch(arr,31));
     }
 
     static void quickSort(int[] arr, int low, int high)
@@ -126,5 +128,23 @@ public class Search {
 
 	return -1;
     }
+
+
+
+    static int interpolationSearch(int[] arr,int x){
+        int n = arr.length;
+        int low = 0; int high = n-1; int  step = 0;
+        while (low <= high && x >= arr[low] && x <= arr[high]) {
+            step +=1;
+            int pos = low + (int)((high-low)/(arr[high]-arr[low]))*(x-arr[low]);
+            if (arr[pos] == x) { return pos;
+            } else if (arr[pos]<x) { low = pos +1;} else {high = pos -1;}
+            
+        }
+        return -1;
+    }
+
+
+
 
 }

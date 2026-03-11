@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý bán hàng</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+margin:0;
+background:#f1f3f7;
+}
+
+/* header */
+
+.header{
+background:linear-gradient(90deg,#2c3e50,#34495e);
+color:white;
+padding:18px 25px;
+font-size:22px;
+font-weight:600;
+}
+
+/* layout */
+
+.container{
+display:flex;
+gap:20px;
+padding:25px;
+}
+
+/* card */
+
+.card{
+background:white;
+border-radius:10px;
+padding:20px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* products */
+
+.products{
+width:35%;
+}
+
+.products input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ddd;
+margin-bottom:15px;
+}
+
+/* product item */
+
+.product{
+padding:12px;
+border-radius:6px;
+margin-bottom:8px;
+display:flex;
+justify-content:space-between;
+background:#fafafa;
+}
+
+.price{
+color:#27ae60;
+font-weight:600;
+}
+
+/* order */
+
+.order{
+flex:1;
+}
+
+/* table */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th{
+background:#f7f9fc;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+/* service */
+
+.service{
+margin-top:15px;
+}
+
+select{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+/* total */
+
+.total{
+font-size:22px;
+font-weight:600;
+margin-top:15px;
+text-align:right;
+color:#2c3e50;
+}
+
+/* button */
+
+button{
+margin-top:15px;
+padding:12px;
+width:100%;
+border:none;
+border-radius:6px;
+font-size:16px;
+background:#27ae60;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+🛒 Lập hóa đơn bán hàng
+</div>
+
+<div class="container">
+
+<!-- danh sách sản phẩm -->
+
+<div class="card products">
+
+<h3>Sản phẩm</h3>
+
+<input type="text" placeholder="🔍 Tìm sản phẩm...">
+
+<div class="product">
+<span>Vợt Yonex Astrox 77</span>
+<span class="price">2.500.000đ</span>
+<div><button>+</button></div>
+</div>
+
+<div class="product">
+<span>Cước Yonex BG65</span>
+<span class="price">120.000đ</span>
+<div><button>+</button></div>
+</div>
+
+<div class="product">
+<span>Quấn cán Yonex</span>
+<span class="price">50.000đ</span>
+<div><button>+</button></div>
+</div>
+
+</div>
+
+<!-- đơn hàng -->
+
+<div class="card order">
+
+<h3>Đơn hàng</h3>
+
+<table>
+
+<tr>
+<th>Sản phẩm</th>
+<th>Giá</th>
+</tr>
+
+<tr>
+<td>Cước Yonex BG65</td>
+<td>120.000đ</td>
+</tr>
+
+<tr>
+<td>Quấn cán Yonex</td>
+<td>50.000đ</td>
+</tr>
+
+</table>
+
+<div class="service">
+
+<h4>Thêm dịch vụ</h4>
+
+<select>
+<option>Chọn dịch vụ (nếu có)</option>
+<option>Đan vợt - 120.000đ</option>
+<option>Quấn cán - 50.000đ</option>
+</select>
+
+</div>
+
+<div class="total">
+Tổng tiền: 170.000đư
+</div>
+
+<button>
+Thanh toán
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#2b9aa5;
+}
+
+.khoahoc{
+text-align:center;
+padding:40px;
+color:white;
+}
+
+.khoahoc h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.mota{
+font-size:14px;
+margin-bottom:40px;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.hinh{
+width:270px;
+padding:30px 20px;
+color:white;
+}
+
+.hinh h2{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hinh ul{
+list-style:none;
+text-align:left;
+margin-bottom:20px;
+}
+
+.hinh ul li{
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,0.5);
+font-size:14px;
+}
+
+button{
+background:#ff4b4b;
+border:none;
+padding:10px 18px;
+color:white;
+border-radius:4px;
+cursor:pointer;
+}
+
+.vang{
+background:#f4b400;
+}
+
+.den{
+background:black;
+}
+
+.xanh{
+background:green;
+}

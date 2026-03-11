@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tạo Đơn Đan Vợt</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f0f0f0;
+}
+
+.container{
+    width:600px;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+h2{
+    margin-top:0;
+}
+
+.section{
+    margin-top:20px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.row div{
+    flex:1;
+}
+
+.buttons{
+    margin-top:25px;
+    text-align:right;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.save{
+    background:#4A90E2;
+    color:white;
+}
+
+.cancel{
+    background:#ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Quản Lý Đan Vợt</h2>
+
+<div class="section">
+<h3>Thông tin khách hàng</h3>
+
+<label>Tên khách hàng</label>
+<input type="text">
+
+<label>Số điện thoại</label>
+<input type="text">
+</div>
+
+
+<div class="section">
+<h3>Thông tin vợt</h3>
+
+<div class="row">
+<div>
+<label>Hãng vợt</label>
+<select>
+<option>Yonex</option>
+<option>Lining</option>
+<option>Victor</option>
+</select>
+</div>
+
+<div>
+<label>Model vợt</label>
+<select>
+<option>Astrox</option>
+<option>NanoFlare</option>
+<option>Arcsaber</option>
+</select>
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h3>Thông số đan</h3>
+
+<div class="row">
+
+<div>
+<label>Loại cước</label>
+<select>
+<option>BG65</option>
+<option>BG80</option>
+<option>BG66 Ultimax</option>
+</select>
+</div>
+
+<div>
+<label>Lực căng (lbs)</label>
+<input type="number" placeholder="24">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="buttons">
+<button class="save">Lưu đơn</button>
+<button class="cancel">Hủy</button>
+</div>
+
+</div>
+
+</body>
+</html>
+```

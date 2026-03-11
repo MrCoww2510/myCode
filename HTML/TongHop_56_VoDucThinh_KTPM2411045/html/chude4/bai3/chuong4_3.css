@@ -1,0 +1,33 @@
+body{
+background:#eee;
+padding:40px;
+font-family:Arial;
+}
+
+.search{
+background:#d32f2f;
+padding:10px;
+text-align:center;
+}
+
+.search input{
+width:300px;
+padding:6px;
+border:1px solid #ccc;
+border-radius:3px;
+}
+
+.search button{
+padding:6px 10px;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.btn1{
+background:#1976d2;
+}
+
+.btn2{
+background:#333;
+}
