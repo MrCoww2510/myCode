@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab3 {
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("nhap so luong sinh vien");
         int n = sc.nextInt();
         sc.nextLine();
@@ -12,6 +12,7 @@ public class Lab3 {
         Nhap(sv,n);
         XapXep(sv);
         Xuat(sv);
+        sc.close();
     }
 
     static void Nhap(SinhVien[] sv, int n){
@@ -52,7 +53,6 @@ public class Lab3 {
         for (int i = 0; i < n-1; i++) {
             for (int j = i+1; j < n; j++) {
                 if (sv[i].getdiem() > sv[j].getdiem()) {
-
                     SinhVien temp = sv[i];
                     sv[i]= sv[j];
                     sv[j]= temp;

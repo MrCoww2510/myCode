@@ -1,191 +1,206 @@
 /* 🔄 Reset & font */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background: linear-gradient(135deg, #ff009d, #ffffff, #ff76b5);
-  background-size: 300% 300%;
-  animation: gradientMove 10s ease infinite;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	font-family: "Poppins", Arial, sans-serif;
+	background: linear-gradient(135deg, #ff009d, #ffffff, #ff76b5);
+	background-size: 300% 300%;
+	animation: gradientMove 10s ease infinite;
+	color: #333;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 /* Gradient Animation */
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-
 
 /* 🌐 Navbar */
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(36, 36, 36, 0.6);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  padding: 10px 30px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 1100px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(36, 36, 36, 0.6);
+	backdrop-filter: blur(12px);
+	border-radius: 20px;
+	padding: 10px 30px;
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1100px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* 🧑‍💼 Avatar + Brand */
 .tieude {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid #ff76b5;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 3px solid #ff76b5;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
 .avatar:hover {
-  transform: rotate(10deg) scale(1.1);
-  box-shadow: 0 0 20px #ff76b5;
+	transform: rotate(10deg) scale(1.1);
+	box-shadow: 0 0 20px #ff76b5;
 }
 
 .brand {
-  font-size: 28px;
-  font-weight: 600;
-  color: #ff76b5;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-left: 15px;
+	font-size: 28px;
+	font-weight: 600;
+	color: #ff76b5;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-left: 15px;
 }
 
 /* 🔗 Links */
 .links a {
-  margin: 0 10px;
-  font-size: 22px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
+	margin: 0 10px;
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	position: relative;
 }
 .links a:hover {
-  color: #ff76b5;
-  transform: translateY(-4px) scale(1.1);
-  text-shadow: 0 0 10px #ff76b5;
+	color: #ff76b5;
+	transform: translateY(-4px) scale(1.1);
+	text-shadow: 0 0 10px #ff76b5;
 }
 
 /* 🪩 Intro */
 .intro {
-  text-align: center;
-  margin-top: 60px;
-  animation: fadeUp 1.2s ease forwards;
-  opacity: 0;
+	text-align: center;
+	margin-top: 60px;
+	animation: fadeUp 1.2s ease forwards;
+	opacity: 0;
 }
 .intro h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+	font-size: 40px;
+	margin-bottom: 20px;
 }
 .intro h1 span {
-  color: #ff76b5;
+	color: #ff76b5;
 }
 .intro p {
-  font-size: 20px;
-  color: #ddd;
+	font-size: 20px;
+	color: #ddd;
 }
 
 /* 📦 Section chung */
 main section {
-  width: 90%;
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(36, 36, 36, 0.6);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  animation: fadeUp 1.2s ease forwards;
-  opacity: 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: 60px auto;
+	padding: 30px;
+	border-radius: 20px;
+	background: rgba(36, 36, 36, 0.6);
+	backdrop-filter: blur(12px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	animation: fadeUp 1.2s ease forwards;
+	opacity: 0;
 }
 
 /* 📌 Tiêu đề section */
 main section h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #ff76b5;
-  border-bottom: 2px solid #ff76b5;
-  display: inline-block;
-  padding-bottom: 5px;
+	font-size: 28px;
+	margin-bottom: 15px;
+	color: #ff76b5;
+	border-bottom: 2px solid #ff76b5;
+	display: inline-block;
+	padding-bottom: 5px;
 }
 
 /* 🧑‍💻 About */
 .about p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #eee;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #eee;
 }
 
 /* 📂 Projects */
 .projects .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
 }
 .project {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,118,181,0.3);
-  padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 118, 181, 0.3);
+	padding: 20px;
+	border-radius: 15px;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
 .project:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 0 15px rgba(255,118,181,0.6);
+	transform: translateY(-8px) scale(1.02);
+	box-shadow: 0 0 15px rgba(255, 118, 181, 0.6);
 }
 .project h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #ff76b5;
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #ff76b5;
 }
 .project p {
-  font-size: 16px;
-  color: #ccc;
+	font-size: 16px;
+	color: #ccc;
 }
 
 /* 📞 Contact */
 .contact p {
-  color : #ddd;
-  font-size: 18px;
-  margin: 10px 0;
+	color: #ddd;
+	font-size: 18px;
+	margin: 10px 0;
 }
 .contact a {
-  color: #ff76b5;
-  text-decoration: none;
-  font-weight: 500;
+	color: #ff76b5;
+	text-decoration: none;
+	font-weight: 500;
 }
 .contact a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* 📍 Footer */
 footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  background: rgba(36, 36, 36, 0.7);
-  backdrop-filter: blur(8px);
-  border-radius: 12px 12px 0 0;
+	margin-top: auto;
+	text-align: center;
+	padding: 15px;
+	font-size: 14px;
+	background: rgba(36, 36, 36, 0.7);
+	backdrop-filter: blur(8px);
+	border-radius: 12px 12px 0 0;
 }
 
 /* ✨ Animation */
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

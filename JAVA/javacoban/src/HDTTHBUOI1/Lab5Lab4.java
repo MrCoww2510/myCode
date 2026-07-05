@@ -145,9 +145,12 @@ public class Lab5Lab4 {
 
     // ================= XEP LOAI =================
     static String XepLoai(float d) {
-        if (d < 5) return "Yeu";
-        if (d < 7) return "Trung binh";
-        if (d < 8) return "Kha";
+        if (d < 5)
+            return "Yeu";
+        if (d < 7)
+            return "Trung binh";
+        if (d < 8)
+            return "Kha";
         return "Gioi";
     }
 }
