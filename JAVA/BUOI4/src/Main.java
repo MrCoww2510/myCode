@@ -4,34 +4,29 @@ import java.util.*;
 // Chương trình quản lý nhân sự đóng thuế
 //==============================================
 
-public class Main
-{
+public class Main {
 	static Scanner scanner = new Scanner(System.in);
 
-	static ArrayList<IDongThue> DanhSach = new ArrayList<>(); 
+	static ArrayList<IDongThue> DanhSach = new ArrayList<>();
 	// Danh sách quản lý tất cả cá nhân có nghĩa vụ thuế
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		chayChuongTrinh();
 	}
 
-	//==============================================
+	// ==============================================
 	// Điều khiển chương trình
-	//==============================================
+	// ==============================================
 
-	static void chayChuongTrinh()
-	{
+	static void chayChuongTrinh() {
 		int LuaChon;
 
-		do
-		{
+		do {
 			menu();
 
 			LuaChon = scanner.nextInt();
 
-			switch(LuaChon)
-			{
+			switch (LuaChon) {
 				case 1:
 					nhapThongTin();
 					break;
@@ -53,13 +48,12 @@ public class Main
 					break;
 			}
 
-		} while(LuaChon != 0);
+		} while (LuaChon != 0);
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void menu()
-	{
+	static void menu() {
 		System.out.println("\n========= MENU =========");
 		System.out.println("1. Nhập thông tin");
 		System.out.println("2. Xuất danh sách quyết toán");
@@ -70,10 +64,9 @@ public class Main
 		System.out.print("Chọn: ");
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void nhapThongTin()
-	{
+	static void nhapThongTin() {
 		System.out.println("1. NV Kinh Doanh");
 		System.out.println("2. NV Kỹ Thuật");
 		System.out.println("3. Cộng tác viên");
@@ -81,8 +74,7 @@ public class Main
 		int Loai = scanner.nextInt();
 		scanner.nextLine();
 
-		if(Loai == 1)
-		{
+		if (Loai == 1) {
 			System.out.print("Mã NV: ");
 			String ma = scanner.nextLine();
 
@@ -97,8 +89,7 @@ public class Main
 			DanhSach.add(nv);
 		}
 
-		else if(Loai == 2)
-		{
+		else if (Loai == 2) {
 			System.out.print("Mã NV: ");
 			String ma = scanner.nextLine();
 
@@ -116,8 +107,7 @@ public class Main
 			DanhSach.add(nv);
 		}
 
-		else if(Loai == 3)
-		{
+		else if (Loai == 3) {
 			System.out.print("Họ tên: ");
 			String ten = scanner.nextLine();
 
@@ -130,46 +120,38 @@ public class Main
 		}
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void xuatDanhSach()
-	{
+	static void xuatDanhSach() {
 		System.out.println("\n===== DANH SÁCH QUYẾT TOÁN =====");
 
-		for(IDongThue x : DanhSach)
-		{
+		for (IDongThue x : DanhSach) {
 			System.out.println("Thuế phải nộp: " + String.format("%,.0f", x.tinhThue()));
 		}
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void sapXep()
-	{
+	static void sapXep() {
 		DanhSach.sort((a, b) -> Double.compare(b.tinhThue(), a.tinhThue()));
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void timKiem()
-	{
-		for(IDongThue x : DanhSach)
-		{
-			if(x.tinhThue() > 1000000)
-			{
+	static void timKiem() {
+		for (IDongThue x : DanhSach) {
+			if (x.tinhThue() > 1000000) {
 				System.out.println("Thuế: " + x.tinhThue());
 			}
 		}
 	}
 
-	//==============================================
+	// ==============================================
 
-	static void thongKe()
-	{
+	static void thongKe() {
 		double TongThue = 0;
 
-		for(IDongThue x : DanhSach)
-		{
+		for (IDongThue x : DanhSach) {
 			TongThue += x.tinhThue();
 		}
 
